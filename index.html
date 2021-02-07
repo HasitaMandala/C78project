@@ -1,0 +1,25 @@
+<html>
+  <link rel="stylesheet" href="style.css">
+    <head>
+        <title>family</title>
+    </head>
+    <body>
+        <h1></h1>
+        <img id="album"src="a30a02c7-e7be-4479-b471-9894a92d1409[2449].JPG">
+        <h2></h2>
+        <button onclick=nextslide()>Next</button>
+        <script>
+            var images=["Hasita Mandala[2338].jpeg","IMG_6931.JPG","4e2f8ba1-c449-4d9d-a36b-f8b8bac30e40[2447].jpg","4e9b77b5-e61e-4766-8358-760739362491[2463].JPG",];
+var i=0;
+function nextslide(){
+
+  if(i==9)
+    {
+      i=0
+    }
+  document.getElementById("album").src=images[i];
+  i++;
+}
+        </script>
+    </body>
+</html>
